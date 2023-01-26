@@ -1,15 +1,16 @@
 @font-face {
-    font-family: "open sans", arial, sans-serif;
-    src: url(../fonts/OpenSans-Regular.woff);
+    font-family: "OpenSans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff) format("woff");
     font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "open sans", arial, sans-serif;
-    src: url(../fonts/OpenSans-Bold.woff);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff) format("woff");
     font-weight: 700;
-    font-style: normal;
-  }
+    font-display: swap;
+}
 
 body {
     width: 100%;
@@ -303,14 +304,6 @@ a {
     margin: 0 auto;
 }
 
-..header-logo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-self: center;
-    padding: 0 15px;
-  }
-
 .header-background {
     display: flex;
     justify-content: space-between;
@@ -462,6 +455,15 @@ a {
     justify-content: space-between;
 }
 
+.trend-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
 .trend-card {
     width: 25%;
     height: 320px;
@@ -487,7 +489,7 @@ a {
     bottom: 0;
 }
 
-.trend-card4 {
+.trend-card-four {
     margin-right: 0;
 }
 
@@ -512,25 +514,25 @@ a {
     width: 100%;
 }
 
-.trend-card1 {
+.trend-card-one {
     background-image: url("../images/trend1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.trend-card2 {
+.trend-card-two {
     background-image: url("../images/trend2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.trend-card3 {
+.trend-card-three {
     background-image: url("../images/trend3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.trend-card4 {
+.trend-card-four {
     background-image: url("../images/trend4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
