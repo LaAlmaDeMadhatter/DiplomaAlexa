@@ -1,3 +1,73 @@
+/* @font-face {
+    font-family: 'Open Sans';
+    font-weight: bold;
+
+    src:
+        local("OpenSans-Bold"),
+        url('../fonts/OpenSans-Bold.ttf') format("ttf"),
+        url('../fonts/OpenSans-Bold.woff') format("woff"),
+        url('../fonts\OpenSans-Bold.woff2') format("woff2");
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    src:
+        local("OpenSans-Regular"),
+        url('../fonts/OpenSans-Regular.ttf') format("ttf"),
+        url('../fonts/OpenSans-Regular.woff') format("woff"),
+        url('../fonts/OpenSans-Regular.woff2') format("woff2");
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-width: 36rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+} */
+
+/* ------------------------------ */
+
 @font-face {
     font-family: "OpenSans";
     src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff) format("woff");
@@ -274,11 +344,13 @@ a {
 /* header */
 
 .header {
-    height: 449px;
+    display: block;
+    width: 100%;
+    /* height: 449px; */
     background-color: #000000;
     position: relative;
-    z-index: 0;
-    padding: 30px 0px 130px;
+    /* z-index: 0;
+    padding: 30px 0px 130px; */
     background-image: url(../images/banner-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -294,26 +366,33 @@ a {
     right: 0;
     bottom: 0;
     opacity: 0.6;
-    z-index: -1;
+    z-index: 0;
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120rem;
+    align-items: center;
+    position: relative;
+    padding: 30px 1% 20px;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    z-index: 2;
 }
 
-.header-background {
+/* .header-background {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .header-title {
-    margin: 100px 0 auto 220px;
+    /* margin: 100px 0 auto 220px;
     /* сверху | справа | снизу | слева */
-    width: 720px;
+    /* width: 720px;
     font-size: 45px;
     line-height: 75px;
     text-transform: uppercase;
@@ -322,7 +401,26 @@ a {
     z-index: 3;
     text-align: center;
     font-weight: bold;
-    display: flex;
+    display: flex; */ 
+
+    font-size: 45px;
+    line-height: 1.66;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 120px;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+.container-headline {
+    position: relative;
+    width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+
 }
 
 .logo {
@@ -332,7 +430,7 @@ a {
 
 /* навигация */
 
-.menu-list {
+/* .menu-list {
     margin: 0;
     display: flex;
     position: absolute;
@@ -342,6 +440,19 @@ a {
     list-style: none;
     top: 40px;
     right: 371px;
+} */
+
+.menu-list-item {
+    display: inline-block;
+    margin-left: 3.5rem;
+}
+
+.menu-list-item a {
+    text-align: center;
+    line-height: auto;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 .menu-list-item:nth-child(n+2) {
@@ -357,6 +468,8 @@ a {
     color: #ffffff;
     text-decoration: underline;
 }
+
+
 
 @media (max-width: 640px) {
     .menu-button {
@@ -1115,7 +1228,7 @@ a {
     }
     .page {
         display: flex;
-        display-wrap: wrap;
+        flex-wrap: wrap;
     }
 }
 
