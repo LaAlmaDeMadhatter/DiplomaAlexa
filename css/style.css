@@ -365,9 +365,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: calc(25% - 0.4rem);
+  /*width: calc(25% - 0.4rem);*/
   position: relative;
-  min-height: 32rem;
+ /* min-height: 32rem; */
   background-color: gray;
   background-position: center center;
   background-repeat: no-repeat;
