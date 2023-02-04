@@ -718,6 +718,7 @@ margin-left: 1.5rem;
 .form-search {
   display: flex;
 }
+ */
 
 .visually__hidden {
   width: 1px;
@@ -726,6 +727,7 @@ margin-left: 1.5rem;
   position: absolute;
 }
 
+/*
 .input-search-lable {
   flex-grow: 1;
 }
